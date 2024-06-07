@@ -335,7 +335,7 @@ class Badge {
         'text-anchor': 'middle',
         'font-family': FONT_FAMILY,
         'text-rendering': 'geometricPrecision',
-        'font-size': 110,
+        'font-size': 140,
       },
     })
   }
