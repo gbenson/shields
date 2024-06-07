@@ -8,7 +8,7 @@ const { XmlElement, ElementList } = require('./xml')
 const FONT_SCALE_UP_FACTOR = 10
 const FONT_SCALE_DOWN_VALUE = 'scale(.1)'
 
-const FONT_FAMILY = 'Verdana,Geneva,DejaVu Sans,sans-serif'
+const FONT_FAMILY = 'monospace'
 const WIDTH_FONT = '11px Verdana'
 const SOCIAL_FONT_FAMILY = 'Helvetica Neue,Helvetica,Arial,sans-serif'
 
