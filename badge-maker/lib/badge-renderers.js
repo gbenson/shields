@@ -34,6 +34,11 @@ function roundUpToEven(val) {
 }
 
 function preferredWidthOf(str, options) {
+  // this is monospace, all strings of the same length should render the
+  // same width.  anafanafo works with verdana though, so the character
+  // we use will determine the overall width.  FWIW:
+  // T = 125, n = 129, B = 139, w = 163, m = 191
+  str = "B".repeat(str.length)
   // Increase chances of pixel grid alignment.
   return roundUpToOdd(anafanafo(str, options) | 0)
 }
