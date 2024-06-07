@@ -29,6 +29,10 @@ function roundUpToOdd(val) {
   return val % 2 === 0 ? val + 1 : val
 }
 
+function roundUpToEven(val) {
+  return val % 2 === 0 ? val : val + 1
+}
+
 function preferredWidthOf(str, options) {
   // Increase chances of pixel grid alignment.
   return roundUpToOdd(anafanafo(str, options) | 0)
@@ -71,7 +75,7 @@ function renderBadge(
   { links, leftWidth, rightWidth, height, accessibleText },
   content,
 ) {
-  const width = leftWidth + rightWidth
+  const width = (leftWidth + rightWidth)
   const leftLink = links[0]
   const { hasLink } = hasLinks({ links })
 
@@ -453,11 +457,11 @@ class Flat extends Badge {
 
 class FlatSquare extends Badge {
   static get height() {
-    return 20
+    return 24
   }
 
   static get verticalMargin() {
-    return 0
+    return 20
   }
 
   static get shadow() {
